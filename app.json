@@ -12,10 +12,22 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      "expo-camera",
+      "expo-av"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
+       "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "VIBRATE",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "WAKE_LOCK"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
